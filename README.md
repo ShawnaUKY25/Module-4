@@ -4,9 +4,7 @@
 A LAMP stack is a popular open-source software bundle used to build and run websites and web applications. It consists of Linux (operating system), Apache (web server), MySQL (database), and PHP (programming language). Libraries and businesses commonly use the LAMP stack because it is free, flexible, and reliable, making it ideal for hosting digital repositories, managing content, and running applications like integrated library systems (ILS) and content management systems. 
 
 
-# Apache2 
-
-*Installation*
+# Installation of Apache2 
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/2ae374bb-b10f-457a-9f8c-f904b32fb5c4" />
 
