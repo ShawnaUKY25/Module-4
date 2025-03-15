@@ -166,6 +166,7 @@ New OPAC.PHP webpage
 
 
 *Any challenges you encountered and how you revolved them.*
+
 I always seem to fumble at the end. I think my eyes get tiered and miss the right keys. I had to do the PHP scripts exercise a few times, until I got it right.
 
 
