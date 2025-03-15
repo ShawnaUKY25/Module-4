@@ -14,12 +14,10 @@ Command: Sudo apt install apache2
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/dcbf3dc9-8f76-4430-9cf4-f7830f9be508" />
 
-Command: Sudo apt install w3m elinks![image](https://github.com/user-attachments/assets/800c79fb-e14b-4c3d-8ce4-8ac0a70125da)
+Command: Sudo apt install w3m elinks
 
 
 *Configuration changes you made to each service (e.g., editing configuration files).*
-
-Appache2
 
 <img width="352" alt="image" src="https://github.com/user-attachments/assets/4e3effc9-6e65-434a-b0ba-be80ad4d42df" />
 
@@ -31,6 +29,7 @@ Default Webpage text in Nano
 
 
 *How you verified that each component was working properly and together.*
+
 
 <img width="391" alt="image" src="https://github.com/user-attachments/assets/21e23412-f7e7-4f08-bdbe-db4ba87949fe" />
  
@@ -73,6 +72,7 @@ New page html PHP file
 
 *How you verified that each component was working properly and together.*
  
+
 <img width="255" alt="image" src="https://github.com/user-attachments/assets/2a0ce6a1-25e8-49c6-b211-663c328c1c0e" />
 
 The New Default PHP webpage
@@ -84,6 +84,7 @@ The file index shows the info.php file has been saved
 
 *Any challenges you encountered and how you revolved them.*
 
+
 This process was a lot easier than the previous Apache2 exercise. A few detailed lessons learned, the hard way.
 
 
@@ -93,6 +94,7 @@ This process was a lot easier than the previous Apache2 exercise. A few detailed
 
 
 *Configuration changes you made to each service (e.g., editing configuration files).*
+
 
 <img width="443" alt="image" src="https://github.com/user-attachments/assets/5275296a-748d-483c-83f9-5f3ebf5442ec" />
 
@@ -112,6 +114,7 @@ Created a new table for books list
 
 
 *How you verified that each component was working properly and together.*
+
 
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/3dde651d-c39e-4801-97c6-69271d4fd1c1" />
 
@@ -166,12 +169,12 @@ New OPAC.PHP webpage
 I always seem to fumble at the end. I think my eyes get tiered and miss the right keys. I had to do the PHP scripts exercise a few times, until I got it right.
 
 
-# Links to Site
+# Site Links
 
-•	Your index.php page on your Ubuntu server
+•	Index.php page on Ubuntu server
 http://34.29.1.232/index.php
 
-•	Your opac.php page on your Ubuntu server
+•	opac.php page on your Ubuntu server
 http://34.29.1.232/opac.php
 
 
