@@ -95,6 +95,10 @@ apachectl configtest
 
 ### 3. Installing MySQL  
 
+**Start Up/Update**
+
+- Install and update apps and operating system
+
 **Commands:**  
 ```sh
 sudo apt install mysql-server
@@ -106,10 +110,60 @@ sudo mysql_secure_installation
 ```
 
 **Configuration Changes:**  
-- Created a new MySQL database.  
-- Added a table for a book catalog with relevant columns.  
-- Assigned user permissions using PHP scripts.  
-
+- Changed the configuration.
+```sh
+Validate passwords: Y
+Password validation policy: 0 (zero) for LOW
+Remove anonymous users: Y
+Disallow root login remotely: Y
+Remove test database and access to it: Y
+Reload privilege tables now: Y
+```
+- Loggedin to SQL
+```sh
+sudo mysql -u root
+```
+-Searched for SQL Databases
+```sh
+mysql> show databases;
+```
+- Created a New Database called opacdb
+```sh
+mysql> create database opacdb default character set utf8mb4 collate utf8mb4_unicode_ci;
+mysql> show databases;
+mysql> grant all privileges on opacdb.* to 'opacuser'@'localhost' with grant option;
+```
+- Created a table in SQL
+```sh
+mysql> show databases;
+mysql> use opacdb;
+```
+- Set up the perameters for the identifyers for a book catalog with relevant columns.
+```sh
+mysql> create table books (
+id int unsigned not null auto_increment,
+author varchar(150) not null,
+title varchar(150) not null,
+copyright year(4) not null,
+primary key (ID) );
+```
+- Include additonal book data to the tables
+```sh
+ cd /var/www
+ sudo touch login.php
+ sudo chmod 640 login.php
+ sudo chown :www-data login.php
+ ls -l login.php
+ sudo nano login.php
+```
+- Assigned user login permissions using PHP scripts.  
+```sh
+  <?php // login.php
+  $db_hostname = "localhost";
+  $db_database = "opacdb";
+  $db_username = "replace with ourt SQL user";
+  $db_password = "replace with thw SQL user's pw"; ?>
+```
 **Verification:**  
 - Successfully ran queries to **view, update, insert, and delete** records.  
 - Connected MySQL and PHP, enabling dynamic data retrieval.  
