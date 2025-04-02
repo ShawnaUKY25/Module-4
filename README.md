@@ -16,8 +16,11 @@ Libraries and businesses commonly use the LAMP stack because it is **free, flexi
 ## Installation and Configuration
 
 ### 1. Installing Apache2  
+**Start Up/Update**
 
-**Command:**  
+- Install and update apps and operating system
+
+**Installation Command:**  
 ```sh
 sudo apt install apache2
 ```
@@ -39,21 +42,50 @@ sudo apt install apache2
 
 ### 2. Installing PHP  
 
+**Start Up/Update**
+
+- Install and update apps and operating system
+
 **Command:**  
+
 ```sh
 sudo apt install php libapache2-mod-php
+sudo systemctl restart apache2
+```
+
+- Confirmed PHP installation using:  
+```sh
+php -v
+```
+
+- Check status after reboot
+```sh
+systemctl status apache2
+```
+- Set New defaults to index.php vs.index.html
+```sh
+  cd /etc/apache2/mods-enabled/
+  sudo cp dir.conf dir.conf.bak
+  sudo nano dir.conf
+```
+
+**Check Installation:**
+```sh
+cd /var/www/html/
+sudo nano info.php
 ```
 
 **Configuration Changes:**  
 - Updated Apache settings to prioritize `index.php` over `index.html`.  
-- Created an `info.php` file to test PHP functionality.  
+- Test to confirm php configuration change.  
+```sh
+apachectl configtest
+```
+**Verification:** 
 
-**Verification:**  
-- Confirmed PHP installation using:  
-  ```sh
-  php -v
-  ```
-- Verified the `info.php` page loaded correctly in the browser.  
+- Verified the `info.php` page loaded correctly in the browser using this url.
+  
+  http://34.29.1.232/index.php
 
 **Challenges & Solutions:**  
 - Process was easier than Apache2 installation.  
