@@ -1,5 +1,4 @@
 # Module-4
-*A brief introduction to what a LAMP stack is and why it is commonly used.*
 
 ## Introduction
 
